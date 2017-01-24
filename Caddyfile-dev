@@ -1,0 +1,6 @@
+localhost:80, 192.168.33.10 {
+  log stdout
+  errors stderr
+  tls off
+  root /srv
+}

@@ -1,0 +1,14 @@
+hugo:
+  image: publysher/hugo
+  command: hugo
+  volumes:
+    - ..:/usr/share/blog
+
+caddy:
+  image: abiosoft/caddy
+  restart: always
+  ports:
+    - 80:80
+  volumes:
+    - ../Caddyfile-dev:/etc/Caddyfile
+    - ../public:/srv
