@@ -1,0 +1,13 @@
+# Permanent redirect to HTTPS
+0.0.0.0:80 {
+  log stdout
+  errors stderr
+  redir https://blog.garjon.com{uri} 301
+}
+
+https://blog.garjon.com {
+  log stdout
+  errors stderr
+  tls gareth.jones@garjon.com
+  root /srv
+}
