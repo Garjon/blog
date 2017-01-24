@@ -1,0 +1,12 @@
+hugo:
+    image: publysher/hugo
+    command: hugo
+    volumes:
+        - .:/usr/share/blog
+
+caddy:
+    image: abiosoft/caddy
+    volumes:
+        - ./public:/srv
+    ports:
+        - 80:2015
