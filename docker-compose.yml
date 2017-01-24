@@ -6,6 +6,7 @@ hugo:
 
 caddy:
     image: abiosoft/caddy
+    restart: always
     volumes:
         - ./public:/srv
     ports:
