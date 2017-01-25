@@ -1,5 +1,5 @@
 # Permanent redirect to HTTPS
-0.0.0.0:80 {
+0.0.0.0:80, garjon.com, www.garjon.com {
   log stdout
   errors stderr
   redir https://blog.garjon.com{uri} 301
