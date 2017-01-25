@@ -4,6 +4,6 @@
     "version": "0.1.0",
     "command": "docker",
     "isShellCommand": true,
-    "args": ["run", "-i", "--rm", "-v", "%cd%:/usr/share/blog", "publysher/hugo", "hugo"],
+    "args": ["run", "-i", "--rm", "-v", "%cd%:/usr/share/blog", "publysher/hugo", "hugo", "--baseURL=http://localhost"],
     "showOutput": "always"
 }
