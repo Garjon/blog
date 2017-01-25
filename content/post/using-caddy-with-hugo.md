@@ -162,6 +162,8 @@ So, I went ahead and created a droplet using:
 
 Now that a droplet is up and running, we can log in and get things running. This is an almost identical process to what we did locally, but, well, it's on the line.
 
+> This example shows me pulling down my blogs git repository. Clone your own one for maximum awesomeness!
+
     $ ssh my-droplet-server-ip
     $ git clone https://github.com/Garjon/blog.git
     $ cd blog
@@ -177,7 +179,7 @@ An IP address is all fine and dandy, but it's not the easiest thing to remember.
 
 I wanted to have the `blog.garjon.com` hostname resolve to my site. So I've gone and set my DNS records up to reflect that. Configuring your DNS records is usually relatively straight forward, but if you get stuck, a quick Google should help set you on your way.
 
-#### Digital Ocean DNS Records
+#### My Digital Ocean DNS Records
 ![DNS Records](/img/using-caddy-with-hugo_dns-records.png)
 
 ## And there you have it!
