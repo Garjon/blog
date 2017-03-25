@@ -29,7 +29,7 @@ Here we are creating the directory we want to put the site in to and then runnin
 
 Want to see what the site is going to look like? Great! Let's serve it up with the Hugo server.
 
-    $ docker run -it --rm -v $(pwd):/usr/share/blog publysher/hugo
+    $ docker run --rm -p 1313:1313 -v $(pwd):/usr/share/blog publysher/hugo
 
 I won't go in to how to add all of your words of wisdom in to this flashy new site, but feel free to take a detour and check out the [official documentation](https://gohugo.io/overview/introduction/).
 
@@ -39,7 +39,7 @@ Caddy is a small web server that is very easy to configure and run.
 
 Let's take a look at how easy it is to spin up a server with the default settings:
 
-    $ docker run -d -v $(pwd)/public:/srv -p 2015:2015 abiosoft/caddy
+    $ docker run --rm -v $(pwd)/public:/srv -p 2015:2015 abiosoft/caddy
 
 This will spin up a Caddy server on port 2015. Check it out, you should now see your site running on [http://localhost:2015](http://localhost:2015)!
 
