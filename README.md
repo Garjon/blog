@@ -1,3 +1,3 @@
-# Garjon Blog
+# What's this repo all about?
 
-This repository is used to generate the blog at [blog.garjon.com](https://blog.garjon.com).
+This is an example repository that is referred to in the [Running a secure blog with Caddy and Hugo](https://www.garjon.com/posts/running-a-secure-blog-with-caddy-and-hugo/) blog article.
